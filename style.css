@@ -1,0 +1,251 @@
+html, body {
+  height: 100%; 
+  margin: 0; 
+  padding: 0; 
+}
+
+body{
+  background-color: #fff5e4;
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+}
+
+.navdiv{
+  display: flex;
+  height: 60px;
+  background-color: #fff5e4;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  font-family: poppins;
+  align-items: center;
+  gap: 2rem;
+  padding-right: 1rem;
+  padding-top: .5rem;
+}
+
+nav a{
+  text-decoration: none;
+  color: #333333;
+}
+
+button{
+  border-radius: 25px;
+  background-color: #8b0000;
+  border: none;
+}
+
+.logo{
+  padding-left: 1rem;
+  font-size: 30px;
+  font-family: 'abril fatface';
+  color: #8b0000;
+}
+
+hr {
+  border: none;
+  height: 1.5px;
+  background-color: #000000;
+  margin: 0 auto;
+  width: 97%;
+  opacity: .5;
+}
+
+/*Cover*/
+
+h1, h2{
+  font-family: 'abril fatface';
+}
+
+h1{
+  font-size: 7rem;
+}
+
+.greeting > h2{
+  font-size: 4rem
+}
+
+.cover{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  height: 100vh;
+}
+
+.cover img{
+  height: 600px;
+  object-fit: cover;
+  padding-top: 30px;
+}
+
+.greeting{
+  padding-left: 2rem;
+}
+
+/*scroll line*/
+
+.scroll{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.starburst {
+  width: 100px; /* adjust to control the size */
+  aspect-ratio: 1;
+  clip-path: polygon(100% 50%,79.63% 54.69%,97.55% 65.45%,76.73% 63.62%,90.45% 79.39%,71.21% 71.21%,79.39% 90.45%,63.62% 76.73%,65.45% 97.55%,54.69% 79.63%,50% 100%,45.31% 79.63%,34.55% 97.55%,36.38% 76.73%,20.61% 90.45%,28.79% 71.21%,9.55% 79.39%,23.27% 63.62%,2.45% 65.45%,20.37% 54.69%,0% 50%,20.37% 45.31%,2.45% 34.55%,23.27% 36.38%,9.55% 20.61%,28.79% 28.79%,20.61% 9.55%,36.38% 23.27%,34.55% 2.45%,45.31% 20.37%,50% 0%,54.69% 20.37%,65.45% 2.45%,63.62% 23.27%,79.39% 9.55%,71.21% 28.79%,90.45% 20.61%,76.73% 36.38%,97.55% 34.55%,79.63% 45.31%);
+  background-color: #8b0000;
+  color: #fff5e4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'poppins';
+  z-index: 50;
+  right: 50%;
+  position: absolute;
+  opacity: 1;
+}
+
+/*About me*/
+
+.aboutMe{
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  min-height: 40vh;
+  transform: translate(0%, 25%);
+}
+
+.aboutMe > h2{
+  font-size: 5rem;
+  font-style: italic;
+  position: absolute;
+  z-index: 10;
+  top: 50px;
+  left: 10%;
+}
+
+.aboutMe > h2 > hr{
+  border: none;
+  height: 3px;
+  background-color: #8b0000;
+  margin: 0 auto;
+  opacity: 1;
+}
+
+.aboutMeDescription{
+  font-family: poppins;
+  background-color: #d3d3d3;
+  padding: 70px 40px 40px 40px;
+  margin-bottom: 50px;
+  position: absolute;
+  width: 65%;
+  top: 100px;
+  left: 30%;
+  line-height: 1.7;
+}
+
+/*Projects*/
+
+
+.projects{
+  height: 100vh;
+  width: 100vw;
+  margin: 50px 0px;
+  overflow: hidden;
+}
+
+.projects > h2{
+  font-size: 5rem;
+  font-style: italic;
+  position: relative;
+  top: 10%;
+  left: 10%;
+}
+
+.projects > h2 > hr{
+  border: none;
+  height: 3px;
+  background-color: #8b0000;
+  margin: 0 auto;
+  opacity: 1;
+  position:absolute;
+  width: 300px;
+}
+
+.projectsBg{
+  background-color: #d3d3d3;
+  margin: 50px;
+  height: fit-content;
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+.projectsBg .pic{
+  height: 400px;
+  width: 400px;
+  background-color: #000000;
+  margin-top: 70px;
+  overflow: hidden;
+}
+
+.projectsBg .proj{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+}
+
+.projectsBg > .proj > p{
+  font-family: poppins;
+  font-size: 18px;
+}
+
+/*Contact*/
+
+.contact{
+  height: 50vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.contactText{
+  display: flex;
+  background-color: #8b0000;
+  width: 100%;
+  padding: 100px;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+
+.contactText > .text > h2{
+  color: #fff5e4;
+  font-size: 100px;
+  font-style: italic;
+}
+
+.icon{
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  outline: 3px solid #fff5e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
